@@ -27,7 +27,7 @@ public class AnnouncerDecoratorTestCase {
         return ShrinkWrap.create(JavaArchive.class)
                 .addPackage(Announcer.class.getPackage())
                 .addAsManifestResource(
-                        new StringAsset(beansXml.createDecorators().clazz(AnnouncerDecorator.class.getName()).up().exportAsString()),
+                        new StringAsset(beansXml.getOrCreateDecorators().clazz(AnnouncerDecorator.class.getName()).up().exportAsString()),
                         beansXml.getDescriptorName());
     }
 

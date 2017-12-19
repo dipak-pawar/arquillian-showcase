@@ -38,7 +38,7 @@ public class SynchronousPaymentProcessorTestCase {
     public static Archive<?> createDeployment() {
         BeansDescriptor beansXml = Descriptors.create(BeansDescriptor.class);
         // enable the alternative in beans.xml
-        beansXml.createAlternatives().clazz(MockPaymentProcessor.class.getName());
+        beansXml.getOrCreateAlternatives().clazz(MockPaymentProcessor.class.getName());
 
         JavaArchive jar = ShrinkWrap.create(JavaArchive.class)
                 .addAsManifestResource(new StringAsset(beansXml.exportAsString()), beansXml.getDescriptorName())
