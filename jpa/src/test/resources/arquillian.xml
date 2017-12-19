@@ -11,12 +11,18 @@
   -->
 
   <defaultProtocol type="Servlet 3.0"/>
-
-  <container qualifier="jbossas-remote-7" default="true">
+  <container qualifier="wildfly" default="true">
     <configuration>
-      <property name="jbossHome">target/jboss-as-${jboss.version:7.1.1.Final}</property>
+      <property name="jbossHome">target/wildfly-${version.org.wildfly:10.1.0.Final}</property>
+      <property name="modulePath">target/wildfly-${version.org.wildfly:10.1.0.Final}/modules</property>
     </configuration>
   </container>
+
+  <!--<container qualifier="jbossas-remote-7" default="true">-->
+    <!--<configuration>-->
+      <!--<property name="jbossHome">target/jboss-as-${jboss.version:7.1.1.Final}</property>-->
+    <!--</configuration>-->
+  <!--</container>-->
 
   <!-- Required configuration for an embedded GlassFish instance -->
   <container qualifier="glassfish-embedded">
