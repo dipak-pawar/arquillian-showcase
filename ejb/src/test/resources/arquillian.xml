@@ -11,8 +11,15 @@
   </engine>
   -->
 
-  <container qualifier="jbossas-remote-7" default="true">
+  <container qualifier="wildfly" default="true">
+    <configuration>
+      <property name="jbossHome">target/wildfly-${version.org.wildfly:10.1.0.Final}</property>
+      <property name="modulePath">target/wildfly-${version.org.wildfly:10.1.0.Final}/modules</property>
+    </configuration>
   </container>
+
+  <!--<container qualifier="jbossas-remote-7" default="true">-->
+  <!--</container>-->
 
   <container qualifier="glassfish-embedded">
     <configuration>
