@@ -11,10 +11,9 @@
   <name>Arquillian Showcase Parent</name>
   <url>http://jboss.org/arquillian</url>
   <description>Parent build for the Arquillian showcase</description>
-
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <version.arquillian_core>1.2.0-SNAPSHOT</version.arquillian_core>
+    <version.arquillian_core>1.2.0.Final</version.arquillian_core>
     <version.org.wildfly>10.1.0.Final</version.org.wildfly>
     <version.arquillian_container_glassfish>1.0.0.CR3</version.arquillian_container_glassfish>
     <version.arquillian_container_openwebbeans>1.0.0.CR2</version.arquillian_container_openwebbeans>
