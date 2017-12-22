@@ -43,6 +43,7 @@
         <module>multinode</module>
         <module>extensions</module>
         <module>spring</module>
+        <module>junit5-vintage</module>
       </modules>
     </profile>
     <profile>
